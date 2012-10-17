@@ -1,6 +1,7 @@
 {"monitores":[
   {
     "name": "grupo1",
+    "title": "Eden sites",
     "layout": "three_v",
     "links":[
     {"link":"http://baby.com.br"},
@@ -10,6 +11,7 @@
   },
   {
     "name": "grupo2",
+    "title": "Status Jenkins",
     "layout": "four",
     "links":[
     {"link":"https://edenbrasil.codebasehq.com/"},
@@ -20,6 +22,7 @@
   },
   {
     "name": "grupo3",
+    "title": "Icinga",
     "layout": "four",
     "links":[
     {"link":"http://icinga.edenbrasil.com.br/icinga/cgi-bin/status.cgi?hosts=all&style=hostservicedetail&hoststatustypes=12&hostprops=2097162&    servicestatustypes=28&serviceprops=2097162&nostatusheader"},
@@ -30,6 +33,7 @@
   },
   {
     "name": "grupo4",
+    "title": "Status:: AWS & Codebase",
     "layout": "two_v",
     "links":[
     {"link":"http://status.aws.amazon.com/"},
