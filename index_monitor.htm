@@ -12,9 +12,7 @@
       for (var i in data.monitores) {
         if(data.monitores[i].name == grupo){
           top.frames["puppet"].document.location=get_frame_template(data.monitores[i].layout);
-          $(top.document).ready(function() {
-            $(top.document).attr("title", "sometitle");
-          }); 
+          $(top.document).attr("title", data.monitores[i].title);
 
           //for(var j in data.monitores[i].links){
           //    top.frames["puppet"].frames[j].document.location.href=data.monitores[i].links[j].link;
