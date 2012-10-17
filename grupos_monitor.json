@@ -11,7 +11,7 @@
   },
   {
     "name": "grupo2",
-    "title": "Status Jenkins",
+    "title": "Status:: Codebase & Jenkins",
     "layout": "four",
     "links":[
     {"link":"https://edenbrasil.codebasehq.com/"},
