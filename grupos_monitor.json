@@ -1,7 +1,7 @@
 {"monitores":[
   {
     "name": "grupo1",
-    "layout": "three_top",
+    "layout": "three_v",
     "links":[
     {"link":"http://baby.com.br"},
     {"link":"http://boutique.baby.com.br"},
@@ -10,10 +10,31 @@
   },
   {
     "name": "grupo2",
+    "layout": "four",
+    "links":[
+    {"link":"https://edenbrasil.codebasehq.com/"},
+    {"link":"http://jenkins.edenbrasil.com.br/view/troy/"},
+    {"link":"http://jenkins.edenbrasil.com.br/"},
+    {"link":"http://192.168.10.10:8080/"}
+    ]
+  },
+  {
+    "name": "grupo3",
+    "layout": "four",
+    "links":[
+    {"link":"http://icinga.edenbrasil.com.br/icinga/cgi-bin/status.cgi?hosts=all&style=hostservicedetail&hoststatustypes=12&hostprops=2097162&    servicestatustypes=28&serviceprops=2097162&nostatusheader"},
+    {"link":"http://icinga.edenbrasil.com.br/icinga/cgi-bin/history.cgi?host=all"},
+    {"link":"http://icinga.edenlocal.com.br/icinga/cgi-bin/history.cgi?host=all"},
+    {"link":"http://icinga.edenlocal.com.br/icinga/cgi-bin/statusmap.cgi?host=all"}
+    ]
+  },
+  {
+    "name": "grupo4",
     "layout": "two_v",
     "links":[
-    {"link":"http://boutique.baby.com.br"},
-    {"link":"http://www.dinda.com.br"}
+    {"link":"http://status.aws.amazon.com/"},
+    {"link":"http://status.atechmedia.com/codebase"}
     ]
   }
 ]}
+
