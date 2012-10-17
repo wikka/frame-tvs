@@ -1,0 +1,19 @@
+{"monitores":[
+  {
+    "name": "grupo1",
+    "layout": "three_top",
+    "links":[
+    {"link":"http://baby.com.br"},
+    {"link":"http://boutique.baby.com.br"},
+    {"link":"http://www.dinda.com.br"}
+    ]
+  },
+  {
+    "name": "grupo2",
+    "layout": "two_v",
+    "links":[
+    {"link":"http://boutique.baby.com.br"},
+    {"link":"http://www.dinda.com.br"}
+    ]
+  }
+]}

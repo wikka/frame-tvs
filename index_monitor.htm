@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monitor</title>
+</head>
+<body>
+  <div id="placeholder"></div>              
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script>
+  $.getJSON('grupos_monitor.json', function(data) {
+      var grupo= (window.parent.location.hash.replace("#", "") || "grupo1");
+      for (var i in data.monitores) {
+        if(data.monitores[i].name == grupo){
+          top.frames["puppet"].document.location=get_frame_template(data.monitores[i].layout);
+          
+          alert("Frames ready to go!");
+
+          for(var j in data.monitores[i].links){
+            if(top.frames["puppet"].frames[0].name == "q1"){
+              top.frames["puppet"].frames[j].document.location.href=data.monitores[i].links[j].link;
+            }
+          }
+        }
+      }
+
+    });
+
+  //  document.getElementById("placeholder").innerHTML="q"+ (j+1) + " " + data.monitores[i].links[j].link;
+
+  function addDot(){
+      $('#placeholder').append('.');
+    }
+  
+  function get_frame_template(type){
+    if(type != null && type != ""){
+      return "frame_" + type + ".htm";
+    }
+    return "";
+  }
+  
+  </script>
+
+</body>
+</html>

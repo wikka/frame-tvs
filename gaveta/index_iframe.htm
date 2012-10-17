@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.5.2.js'></script>
+  
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  <style type='text/css'>
+    body, html { height: 100%; }
+body { margin: 0; padding: 0; background-color: #ebebeb; font-family: Arial; font-size: 12px; color: #363636; }
+#notice { padding-top: 42px; background-image: url('http://cdn4.iconfinder.com/data/icons/fatcow/32x32_0540/link_add.png'); background-repeat: no-repeat; background-position: top center; text-align: center; font-size: 25px; text-shadow: 0px 1px 0px #FFF; margin-top: 15%; }
+#notice > span { font-size: 12px; }
+#link_grabber { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: none; }
+#link_grabber.active { display: block; opacity: 0.01; }
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$("body").bind("dragenter dragover", function(){
+    $("#link_grabber").addClass("active");
+    $("#notice > span").text("Drop it...you know you wanna.");
+}).bind("dragleave dragexit", function(){
+    $("#notice > span").text("Waiting...");
+});
+
+setInterval(function(){
+    if($("#link_grabber").val() != ""){
+        var val = $("#link_grabber").val();
+        $("#link_grabber").val("").removeClass("active");
+        $("#notice > span").text("Your link is: "+val);
+        $("#frame_0").attr('src', val);
+    }
+}, 100);
+});//]]>  
+
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+ <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css" type="text/css" />
+ <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+	<style type="text/css"> 
+	#resizable_0 { float:left; width: 150px; height: 150px; padding: 0.5em; }
+	#resizable_0 h3 { text-align: center; margin: 0; }
+	#resizable_1 { float:left; width: 150px; height: 150px; padding: 0.5em; }
+	#resizable_1 h3 { text-align: center; margin: 0; }
+	#resizable_2 { float:left; width: 150px; height: 150px; padding: 0.5em; }
+	#resizable_2 h3 { text-align: center; margin: 0; }
+	#resizable_3 { float:left; width: 150px; height: 150px; padding: 0.5em; }
+	#resizable_4 h3 { text-align: center; margin: 0; }
+	</style> 
+	<script type="text/javascript"> 
+	$(function() {
+		$("#resizable_0").resizable();
+		$("#resizable_1").resizable();
+		$("#resizable_2").resizable();
+		$("#resizable_3").resizable();
+	});
+	</script> 
+
+</head>
+<body>
+  <textarea id="link_grabber"></textarea>
+<div id="notice">Drop a link on me! :)<br /><span>Waiting...</span></div>
+  
+  <div class="demo"> 
+    <div id="resizable_0" class="ui-widget-content"> 
+      <iframe id='frame_0' name='result' frameBorder='0' src="" width="100%" height="100%"></iframe>
+    <div>
+    <div id="resizable_1" class="ui-widget-content"> 
+      <iframe id='frame_1' name='result' frameBorder='0' src="" width="100%" height="100%"></iframe>
+    <div>
+    <div id="resizable_2" class="ui-widget-content"> 
+      <iframe id='frame_3' name='result' frameBorder='0' src="" width="100%" height="100%"></iframe>
+    <div>
+    <div id="resizable_3" class="ui-widget-content"> 
+      <iframe id='frame_4' name='result' frameBorder='0' src="" width="100%" height="100%"></iframe>
+    <div>
+  <div>
+</body>
+
+
+</html>
+
+
