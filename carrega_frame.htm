@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monitor</title>
+</head>
+<body>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script>
+  $.getJSON('grupos_monitor.json', function(data) {
+      var grupo= (top.location.hash.replace("#", "") || "grupo1");
+      for (var i in data.monitores) {
+        if(data.monitores[i].name == grupo){
+
+          for(var j in data.monitores[i].links){
+              top.frames["puppet"].frames[j].document.location.href=data.monitores[i].links[j].link;
+          }
+        }
+      }
+
+    });
+
+  
+  </script>
+
+</body>
+</html>

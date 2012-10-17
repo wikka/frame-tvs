@@ -13,13 +13,10 @@
         if(data.monitores[i].name == grupo){
           top.frames["puppet"].document.location=get_frame_template(data.monitores[i].layout);
           
-          alert("Frames ready to go!");
 
-          for(var j in data.monitores[i].links){
-            if(top.frames["puppet"].frames[0].name == "q1"){
-              top.frames["puppet"].frames[j].document.location.href=data.monitores[i].links[j].link;
-            }
-          }
+          //for(var j in data.monitores[i].links){
+          //    top.frames["puppet"].frames[j].document.location.href=data.monitores[i].links[j].link;
+          //}
         }
       }
 
@@ -27,10 +24,6 @@
 
   //  document.getElementById("placeholder").innerHTML="q"+ (j+1) + " " + data.monitores[i].links[j].link;
 
-  function addDot(){
-      $('#placeholder').append('.');
-    }
-  
   function get_frame_template(type){
     if(type != null && type != ""){
       return "frame_" + type + ".htm";
