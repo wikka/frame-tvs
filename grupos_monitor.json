@@ -25,7 +25,7 @@
     "title": "Icinga",
     "layout": "four",
     "links":[
-    {"link":"http://icinga.edenbrasil.com.br/icinga/cgi-bin/status.cgi?hosts=all&style=hostservicedetail&hoststatustypes=12&hostprops=2097162&    servicestatustypes=28&serviceprops=2097162&nostatusheader"},
+    {"link":"http://icinga.edenbrasil.com.br/icinga/cgi-bin/status.cgi?hosts=all&style=hostservicedetail&hoststatustypes=12&hostprops=2097162&servicestatustypes=28&serviceprops=2097162&nostatusheader"},
     {"link":"http://icinga.edenbrasil.com.br/icinga/cgi-bin/history.cgi?host=all"},
     {"link":"http://icinga.edenlocal.com.br/icinga/cgi-bin/history.cgi?host=all"},
     {"link":"http://icinga.edenlocal.com.br/icinga/cgi-bin/statusmap.cgi?host=all"}
