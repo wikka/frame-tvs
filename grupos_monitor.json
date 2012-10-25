@@ -4,20 +4,37 @@
     "title": "Eden sites",
     "layout": "three_v",
     "links":[
-    {"link":"http://baby.com.br"},
     {"link":"http://boutique.baby.com.br"},
+    {"link":"http://baby.com.br"},
     {"link":"http://www.dinda.com.br"}
     ]
   },
   {
     "name": "grupo2",
     "title": "Status:: Codebase & Jenkins",
-    "layout": "four",
+    "layout": "three_top",
     "links":[
     {"link":"https://edenbrasil.codebasehq.com/"},
-    {"link":"http://jenkins.edenbrasil.com.br/view/troy/"},
     {"link":"http://jenkins.edenbrasil.com.br/"},
     {"link":"http://192.168.10.10:8080/"}
+    ]
+  },
+  {
+    "name": "grupoDinda",
+    "title": "qa-dinda.edenbrasil.com.br & Jenkins",
+    "layout": "two_v",
+    "links":[
+    {"link":"https://qa-dinda.edenbrasil.com.br"},
+    {"link":"http://jenkins-02.edenbr.com:8080/view/Dinda/"}
+    ]
+  },
+  {
+    "name": "grupoTroy",
+    "title": "sqa-baby.edenbrasil.com.br & Jenkins",
+    "layout": "two_v",
+    "links":[
+    {"link":"http://sqa-baby.edenbrasil.com.br"},
+    {"link":"http://jenkins.edenbrasil.com.br/view/troy/"}
     ]
   },
   {
@@ -38,6 +55,33 @@
     "links":[
     {"link":"http://status.aws.amazon.com/"},
     {"link":"http://status.atechmedia.com/codebase"}
+    ]
+  },
+  {
+    "name": "grupo5",
+    "title": "Boutique Baby + Analytics",
+    "layout": "two_v33",
+    "links":[
+    {"link":"http://boutique.baby.com.br"},
+    {"link":"https://www.google.com/analytics/web/?hl=en#realtime/rt-overview/a34587088w62185610p63733425/"}
+    ]
+  },
+  {
+    "name": "grupo6",
+    "title": "Baby.com.br + Analytics",
+    "layout": "two_v33",
+    "links":[
+    {"link":"http://baby.com.br"},
+    {"link":"https://www.google.com/analytics/web/?hl=en#realtime/rt-overview/a25835719w50130361p50701674/"}
+    ]
+  },
+  {
+    "name": "grupo7",
+    "title": "Dinda + Analytics",
+    "layout": "two_v33",
+    "links":[
+    {"link":"http://www.dinda.com.br"},
+    {"link":"https://www.google.com/analytics/web/?hl=en#realtime/rt-overview/a31063225w57732896p58916020/"}
     ]
   }
 ]}
