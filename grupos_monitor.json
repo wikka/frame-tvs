@@ -38,6 +38,15 @@
     ]
   },
   {
+    "name": "grupoRadiator",
+    "title": "Radiator Troy & Dinda",
+    "layout": "two_v",
+    "links":[
+    {"link":"http://jenkins.edenbrasil.com.br/view/troy/"},
+    {"link":"http://jenkins-02.edenbr.com:8080/view/Dinda/"}
+    ]   
+  },
+  {
     "name": "grupo3",
     "title": "Icinga",
     "layout": "four",
