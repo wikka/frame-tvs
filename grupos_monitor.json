@@ -15,7 +15,7 @@
     "layout": "three_top",
     "links":[
     {"link":"https://edenbrasil.codebasehq.com/"},
-    {"link":"http://jenkins.edenbrasil.com.br/"},
+    {"link":"http://jenkins-01.edenbr.com/"},
     {"link":"http://192.168.10.10:8080/"}
     ]
   },
@@ -34,17 +34,18 @@
     "layout": "two_v",
     "links":[
     {"link":"http://sqa-baby.edenbrasil.com.br"},
-    {"link":"http://jenkins.edenbrasil.com.br/view/troy/"}
+    {"link":"http://jenkins-01.edenbr.com/view/troy/"}
     ]
   },
   {
     "name": "grupoRadiator",
     "title": "Radiator Troy & Dinda",
-    "layout": "two_v",
+    "layout": "three_v",
     "links":[
-    {"link":"http://jenkins.edenbrasil.com.br/view/troy/"},
+    {"link":"http://jenkins-01.edenbr.com:8080/view/troy/"},
+    {"link":"http://jenkins-03.edenbr.com:8080/view/troy/"},
     {"link":"http://jenkins-02.edenbr.com:8080/view/Dinda/"}
-    ]   
+    ]
   },
   {
     "name": "grupo3",
