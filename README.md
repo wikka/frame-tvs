@@ -25,7 +25,7 @@ To add or change some group of pages/links, use the json file.
 
 To charge the group of links, call in the Firefox browser:
 
-    index.htm#[name_attribute] # eg. index.htm#grupo1
+    index.htm#[name_attribute] # eg. index.htm#grupoSites
 
 ___
 Leslie Wittig Quintanilla
